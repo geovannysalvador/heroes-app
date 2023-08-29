@@ -7,6 +7,9 @@ import { LayoutPagesComponent } from './pages/layout-pages/layout-pages.componen
 import { ListPagesComponent } from './pages/list-pages/list-pages.component';
 import { NewHeroePagesComponent } from './pages/new-heroe-pages/new-heroe-pages.component';
 import { SearchHeroePagesComponent } from './pages/search-heroe-pages/search-heroe-pages.component';
+import { MaterialModule } from '../material/material.module';
+import { CardComponent } from './components/card/card.component';
+import { HeroImagePipe } from './pipes/hero-image.pipe';
 
 
 @NgModule({
@@ -16,10 +19,15 @@ import { SearchHeroePagesComponent } from './pages/search-heroe-pages/search-her
     ListPagesComponent,
     NewHeroePagesComponent,
     SearchHeroePagesComponent,
+    CardComponent,
+
+    // Pipes usados
+    HeroImagePipe,
   ],
   imports: [
     CommonModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
+    MaterialModule,
   ]
 })
 export class HeroesModule { }

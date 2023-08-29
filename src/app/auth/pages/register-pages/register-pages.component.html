@@ -1,1 +1,22 @@
-<p>register-pages works!</p>
+<div class="flex flex-column">
+  <span class=" text-lg mb-4">Registrarse</span>
+
+  <mat-form-field>
+    <mat-label>Correo</mat-label>
+    <input type="text" matInput placeholder="Usuario">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Contraseña</mat-label>
+    <input type="password" matInput placeholder="Contraseña">
+  </mat-form-field>
+
+  <!--  -->
+  <button mat-button mat-stroked-button color="accent">
+    <mat-icon>person_add</mat-icon>
+    Crear Cuenta
+  </button>
+  <div class="flex justify-content-end mt-5">
+    <a routerLink="/auth/login">Tienes Cuenta?</a>
+  </div>
+</div>
