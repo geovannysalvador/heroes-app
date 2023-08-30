@@ -1,2 +1,88 @@
-<p>add-heroe-pages works!</p>
-<p>Heroes edit!</p>
+<h1>
+  Editar / Agregar
+  Heroe
+  <small>Super Man</small>
+</h1>
+
+<mat-divider class="mb-2"></mat-divider>
+
+<div class="grid">
+
+  <div class="col-12 sm:col-6">
+    <mat-card>
+
+      <mat-card-content>
+        <div class="grid">
+          <mat-form-field class="col-12 sm:col-6" color ="warn">
+            <mat-label>Super Heroe</mat-label>
+            <input
+            matInput
+            type="text"
+            required=""
+            >
+          </mat-form-field>
+          <!--  -->
+          <mat-form-field class="col-12 sm:col-6" color ="warn">
+            <mat-label>Alter Ego</mat-label>
+            <input
+            matInput
+            type="text"
+            required=""
+            >
+          </mat-form-field>
+
+          <mat-form-field class="col-12" color ="warn">
+            <mat-label>Primera aparicion</mat-label>
+            <input
+            matInput
+            type="text"
+            required=""
+            >
+          </mat-form-field>
+
+          <mat-form-field class="col-12" color ="warn">
+            <mat-label>Personajes</mat-label>
+            <input
+            matInput
+            type="text"
+            required=""
+            >
+          </mat-form-field>
+
+          <mat-form-field class="col-12" color ="warn">
+            <mat-label>Editora</mat-label>
+            <mat-select required="">
+              <mat-option
+              *ngFor="let options of publications"
+              [value]="options.id">
+              {{options.desc}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="flex justify-content-between">
+          <button mat-flat-button color="warn">
+            <mat-icon>delete_sweep</mat-icon>
+            Borrar
+          </button>
+
+          <button mat-flat-button color="primary">
+            <mat-icon>add_card</mat-icon>
+            Guardar
+          </button>
+        </div>
+
+
+      </mat-card-content>
+
+    </mat-card>
+  </div>
+
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <img [src]="" alt="imagen nueva" mat-card-image>
+    </mat-card>
+  </div>
+
+</div>

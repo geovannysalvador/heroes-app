@@ -10,7 +10,7 @@ export class HeroesServices {
 
   private baseUrl:string = enviroments.baseUrl
 
-  constructor(private http: HttpClient) { }
+  constructor(private http:HttpClient) { }
 
   getHeroes():Observable<Hero[]>{
     return this.http.get<Hero[]>(`${this.baseUrl}/heroes`)
@@ -21,6 +21,10 @@ export class HeroesServices {
     .pipe(
       catchError(error => of(undefined))
     );
+  }
+
+  getSearching(query:string):Observable<Hero[]>{
+    return this.http.get<Hero[]>(`${this.baseUrl}/heroes/?q=${query}&_limit=6`);
   }
 
 }
