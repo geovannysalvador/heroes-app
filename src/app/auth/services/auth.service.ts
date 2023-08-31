@@ -37,9 +37,9 @@ export class AuthService {
 
     return this.http.get<User>(`${ this.baseUrl }/users/1`)
     .pipe(
-        tap( user => this.user = user),
-        map( user => !!user),
-        catchError( err => of(false)),
+      tap( user => this.user = user),
+      map( user => !!user),
+      catchError( error => of(false))
     )
 
 
