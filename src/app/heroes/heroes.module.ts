@@ -11,6 +11,7 @@ import { SearchHeroePagesComponent } from './pages/search-heroe-pages/search-her
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { HeroImagePipe } from './pipes/hero-image.pipe';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 
 
@@ -25,6 +26,8 @@ import { HeroImagePipe } from './pipes/hero-image.pipe';
 
     // Pipes usados
     HeroImagePipe,
+     ConfirmDialogComponent,
+
   ],
   imports: [
     CommonModule,
