@@ -23,10 +23,10 @@ import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dial
     NewHeroePagesComponent,
     SearchHeroePagesComponent,
     CardComponent,
+    ConfirmDialogComponent,
 
     // Pipes usados
     HeroImagePipe,
-     ConfirmDialogComponent,
 
   ],
   imports: [

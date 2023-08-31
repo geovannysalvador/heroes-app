@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
-      "email": "john.due@gmail.com"
+      "user": "John Alex",
+      "email": "john.Alex@gmail.com"
     }
   ],
   "heroes": [
@@ -166,6 +166,15 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "dhAaflV",
+      "superhero": "Namor",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Namor",
+      "first_appearance": "Action Comic #233",
+      "characters": "Namor",
+      "alt_img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F53%2F5d%2F8b%2F535d8b9b73db0ce52b57bf7208c9b964.jpg&f=1&nofb=1&ipt=f3f32b35b28e9278cab84f0e0ed8b36ae685fdadd257e54fa6c83360bdc83871&ipo=images"
     }
   ]
 }

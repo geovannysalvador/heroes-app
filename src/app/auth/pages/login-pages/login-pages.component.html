@@ -1,24 +1,31 @@
-<div class="flex flex-column">
-  <span class=" text-lg mb-4">Login</span>
+<mat-card>
+  <mat-card-content>
+    <div class="flex flex-column">
+      <span class=" text-lg mb-4">Login</span>
 
-  <mat-form-field>
-    <mat-label>Correo</mat-label>
-    <input type="text" matInput placeholder="Usuario">
-  </mat-form-field>
+      <mat-form-field>
+        <mat-label>Correo</mat-label>
+        <input type="text" matInput placeholder="Usuario">
+      </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Contraseña</mat-label>
-    <input type="password" matInput placeholder="Contraseña">
-  </mat-form-field>
+      <mat-form-field>
+        <mat-label>Contraseña</mat-label>
+        <input type="password" matInput placeholder="Contraseña">
+      </mat-form-field>
 
-  <!--  -->
-  <button mat-button mat-stroked-button color="accent">
-    <mat-icon>login</mat-icon>
-    Ingresar
-  </button>
+      <!--  -->
+      <button mat-button mat-stroked-button color="accent"
+      (click)="OnLogin()">
+        <mat-icon>login</mat-icon>
+        Ingresar
+      </button>
 
-  <div class="flex justify-content-end mt-5">
-    <a routerLink="/auth/new-account">Registrarse</a>
-  </div>
+      <div class="flex justify-content-end mt-5">
+        <a routerLink="/auth/new-account">Registrarse</a>
+      </div>
 
-</div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+
